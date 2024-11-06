@@ -13,17 +13,9 @@ const SearchBar = ({ setSearchQuery }) => {
           <input
             type="text"
             placeholder="Search Service"
-            className=" rounded px-8 py-2 bg-[#F7F7F7] outline-none"
+            className=" rounded px-8 py-3 w-72 bg-[#F7F7F7] outline-none"
             onChange={handleSearchChange}
           />
-          <div >
-            <button
-              type="submit"
-              className="bg-primary text-white px-3 py-2 rounded"
-            >
-              <IoSearch className="text-2xl" />
-            </button>
-          </div>
         </div>
       </form>
     </div>
