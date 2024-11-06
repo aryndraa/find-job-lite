@@ -36,8 +36,8 @@ const CategoryFilter = () => {
       navigate("/service/service-category", { state: { selectedCategories } });
     } else if (location.pathname === "/project") {
       navigate("/project/project-category", { state: { selectedCategories } });
-    } else if (location.pathname === "/list-freelancer"){
-      navigate("/list-freelancer/freelancer-category", { state: { selectedCategories } });
+    } else if (location.pathname === "/freelancer"){
+      navigate("/freelancer/freelancer-category", { state: { selectedCategories } });
     }
   };
 

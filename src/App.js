@@ -48,7 +48,7 @@ function App() {
         <Route path="/project/details-project" element={<DetailsProject />} />
         <Route path="/service" element={<Service />} />
         <Route path="/service/details-service" element={<DetailsService />} />
-        <Route path="/service/service-category" element={<ServiceByCategory />} />
+        <Route path="/service/service-category" element={ <CategoryResults/>} />
         <Route path="/service/create-service" element={<CreateService />} />
         <Route path="/freelancer" element={<ListFreelancer />} />
         <Route path="/freelancer/freelancer-category" element={<CategoryResults />} />

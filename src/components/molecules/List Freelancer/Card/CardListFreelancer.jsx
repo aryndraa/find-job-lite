@@ -1,24 +1,14 @@
 import React from 'react'
 
-const freelanceData = [
-    {
-      id: 1,
-      name: 'Byeon',
-      email: 'example@gmail.com',
-      projects: 12,
-      likes: 10,
-      favorites: 120,
-      profileImage: 'https://i.pinimg.com/originals/9e/63/8d/9e638d6c84f0de74b01f2c0cee9c1b7f.jpg',
-      backgroundImage: 'https://www.pixelstalk.net/wp-content/uploads/2016/07/Nature-wallpapers-hd-backgroud-1080p.jpg',
-    },
-  ];
-const CardListFreelancer = () => {
+
+
+const CardListFreelancer = ({freelancers}) => {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-4">
-      {freelanceData.map((freelance) => (
+      { freelancers.map((freelance) => (
         <div
           key={freelance.id}
-          className="max-w-sm bg-white border border-gray-200 rounded-lg overflow-hidden"
+          className=" max-w-sm bg-white border border-gray-200 rounded-lg overflow-hidden"
         >
           <div
             className="h-28 m-4 rounded-lg bg-cover bg-center"

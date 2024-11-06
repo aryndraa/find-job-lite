@@ -22,9 +22,9 @@ const Home = () => {
   return (
     <div className="mx-4 lg:mx-16 ">
       {/* Hero */}
-      <div className="min-h-[100vh] lg:min-h-screen justify-end lg:justify-between lg:items-center flex-col lg:flex-row flex gap-12 lg:gap-6">
+      <div className="min-h-[105vh] lg:min-h-screen justify-end lg:justify-between lg:items-center flex-col lg:flex-row flex gap-12 lg:gap-6">
         <div className="lg:flex-1">
-          <h1 className="font-bold text-3xl md:text-[40px] lg:text-[45px] xl:text-6xl leading-tight">
+          <h1 className="font-bold text-3xl md:text-[40px] lg:text-5xl leading-tight">
             Find Your Dream Jobs. With Your Interest and Skills.
           </h1>
           <p className="text-regular text-secondary mt-2 text-[13px] md:text-[15px] md:max-w-[35rem] lg:max-w-[29rem] xl:max-w-[45rem] xl:text-base *:leading-relaxed font-poppins">
@@ -104,8 +104,10 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <CardSwiper />
-        <CategoryDekstop />
+        <div className="flex flex-col gap-6"> 
+          <CardSwiper />
+          <CategoryDekstop />
+        </div>
         <div className="mt-5 lg:hidden">
           <button className="text-base w-full p-3 border border-hitam hover:bg-hitam hover:text-white transition-all ease-linear duration-200 rounded font-medium">
             Find More Project

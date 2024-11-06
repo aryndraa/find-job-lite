@@ -1,5 +1,6 @@
 // Service.js
 import React from "react";
+import { useState } from "react";
 import HeroSection from "../components/molecules/Service/Hero/HeroService";
 import CategoryFilter from "../components/molecules/filter/CategoryFilter";
 import SearchBar from "../components/molecules/SearchBar";
@@ -8,6 +9,9 @@ import ServiceCard from "../components/molecules/Service/Card/ServiceCard";
 import BreadCrumbs from "../components/molecules/BreadCrumbs";
 
 const Service = () => {
+
+  const [searchQuery, setSearchQuery] = useState("");
+
   const breadLink = [
     {
       url: "/",
@@ -25,14 +29,13 @@ const Service = () => {
       <HeroSection />
       <CategoryFilter />
       <div className="flex items-start flex-col lg:flex-row justify-between gap-5">
-        <SearchBar />
+      <SearchBar setSearchQuery={setSearchQuery} />
         <div className="mt-2 flex items-end">
           <SortingOptions />
         </div>
       </div>
-      <h2 className="text-xl font-bold mt-6">12,000 Results</h2>
       <div className=" gap-4 mt-4">
-        <ServiceCard />
+        <ServiceCard searchQuery={searchQuery} />
       </div>
     </div>
   );
